@@ -8,7 +8,7 @@
 body {font-family: "맑은 고딕", "돋움", "맑은 고딕"; font-size: 0.75em; color: #333;}
 
 .header {
-	width: 630px;
+	width: 1130px;
 	height: 100px;
 	margin: 50px auto;
 	background-color: #ddd;
@@ -20,25 +20,88 @@ body {font-family: "맑은 고딕", "돋움", "맑은 고딕"; font-size: 0.75em
 
 
 .search-box{
-	width: 400px;
+	width: 586px;
 	height: 52px;
-	background-color: #ccc;
+	background-color: white;
+/* 	background-color: #ccc; */
+ 	border: 2px solid #19ce60;
+    border-radius: 2px; 
 }
 
 .search-box input, .search-box a{
 	display: block;
 }
 
+
+
+.search-box input{
+    width: 345px;
+    height: 46px;
+    margin: 1px;
+    background-color: #fff;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    font-weight: 700;
+    outline: 0;
+    border-radius: 0;
+    border: 0;
+}
+
 .search-box input, .search-box .btn-search, .search-box a {
 	float: right;
 	
+	
 }
-
 .header .logo{
 	font-size: 0;
 	width: 222px;
 	height: 52px;
 	background: #fff url('/ch03/images/nsplite.png') no-repeat 0 -158px/ 457px 434px;
+}
+
+#keyboard {
+	font-size: 0px;
+    width: 20px;
+    height: 12px;
+    background-image: url('/ch03/images/nsplite.png');
+    background-position: -420px -395px;
+    background-repeat: no-repeat;
+    background-size: 457px 434px;
+} 
+
+ #dropdown { 
+	font-size: 0px;
+    width: 10px;
+    height: 5px;
+    background-image: url('/ch03/images/nsplite.png');
+    background-position: -408px -77px;
+    background-repeat: no-repeat;
+    background-size: 457px 434px;
+} 
+
+.search-box .btn-search{
+font-size: 0px;
+    width: 56px;
+    height: 52px;
+        background-color: #19ce60; 
+            border-radius: 0 2px 2px 0;
+            margin: auto;
+	align-content:center;
+                text-align: center;
+}
+
+.ico_search_submit{
+	margin: 15px 17px;
+   display: block;
+    width: 22px;
+    height: 22px;
+    background-position: -420px 0;
+    background-repeat: no-repeat;
+ 	background-image: url('/ch03/images/nsplite.png'); 
+    background-size: 457px 434px;  
+    background-color: #19ce60; 
+    border: none;
 }
 </style>
 </head>
@@ -47,7 +110,8 @@ body {font-family: "맑은 고딕", "돋움", "맑은 고딕"; font-size: 0.75em
 		<h1 class='logo'>네이버</h1>
 		<div class='search-box'>
 			<div class='btn-search'>
-				<button>돋보기</button>
+				<button title='돋보기'class="ico_search_submit">
+				</button>
 			</div>
 			<a href='#' id = 'dropdown'>드롭다운</a><a href='#' id = 'keyboard'>키보드</a> 
 			<input type='text'/>
