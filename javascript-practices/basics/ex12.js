@@ -17,7 +17,7 @@ Array.prototype.insert = function(index, value) {
 
 
         var f = function(e){
-            console.log("qwereqwreqwrqwerq"+this);
+          
             this.splice(index++,0,e);
         };
 
