@@ -64,9 +64,30 @@ var changeImage = function() {
 		src: 'images/' + images[index].file
 	});
 }
+var timer;
+
+var slideShow = function(){
+	
+	if($(this).text() == '슬라이드쇼 시작'){
+		$(this).text('슬라이드 쇼 중지')
+		timer = setInterval(function(){
+			var index = Math.floor(Math.random() * images.length);
+			$(".image-viewer img").attr({
+				alt: images[index].name,
+				src: 'images/' + images[index].file
+		});
+		},3000)
+	}else{
+		$(this).text('슬라이드쇼 시작');
+		clearInterval(timer);
+	}
+}
+
 $(function(){
-	$('#btn-change').click(changeImage);
+	$('#btn-change,img').click(changeImage);
 		changeImage();
+	
+	$('#btn-slideshow').click(slideShow);
 	});
 		
 </script>
