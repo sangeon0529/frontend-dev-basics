@@ -23,6 +23,9 @@
 				</property>
 			</bean>
 			<!-- 2. XML message converoter -->
+			
+			
+			
 			<!-- 3. JSON message converoter -->
 			<bean
 				class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">

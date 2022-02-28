@@ -2,9 +2,12 @@ var imageViewer = {
 	init: function() {
 		_this = this
 		$(function() {
-			$("#btn-change").click(_this.changeImage.bind(_this));
+			console.log(this)
+			$("#btn-change").click(function(){
+				console.log("asdf")
+			});
 
-		}.bind(this))
+		})
 	},
 	
 	changeImage: function() {
